@@ -39,7 +39,5 @@ namespace CodingChallenge.Data.Classes.FormasConcretas
         {
             return _ladoDerecho + _ladoIzquierdo + _baseMenor + _baseMayor;
         }
-
-
     }
 }
