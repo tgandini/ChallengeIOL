@@ -53,5 +53,10 @@ namespace CodingChallenge.Data.Classes.Idiomas
         {
             return cantidad == 1 ? "Triángulo" : "Triángulos";
         }
+
+        public override string TraducirForma(Rectangulo tipoFigura, int cantidad)
+        {
+            return cantidad == 1 ? "Rectángulo" : "Rectángulos";
+        }
     }
 }

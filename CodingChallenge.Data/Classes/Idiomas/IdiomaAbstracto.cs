@@ -12,6 +12,7 @@ public abstract class IdiomaAbstracto
     public abstract string TraducirForma(Cuadrado tipoFigura, int cantidad);
     public abstract string TraducirForma(Trapecio tipoFigura, int cantidad);
     public abstract string TraducirForma(TrianguloEquilatero tipoFigura, int cantidad);
+    public abstract string TraducirForma(Rectangulo tipoFigura, int cantidad);
     public abstract string getTextoFormas();
 
     public abstract string getTextoPerimetro();
