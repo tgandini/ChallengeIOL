@@ -143,7 +143,8 @@ namespace CodingChallenge.Data.Tests
                 new Cuadrado(12)
             };
             var resumen = FormaGeometrica.Imprimir(formas, FormaGeometrica.Frances);
-            Assert.AreEqual(true, true);
+            Assert.AreEqual("<h1>Rapport sur les formes</h1>1 Cercle | Zone 314,16 | Périmètre 62,83 <br/>1 Carré | Zone 144 | Périmètre 48 <br/>1 Trapèze | Zone 59,5 | Périmètre 32,5 <br/>TOTAL:<br/>3 formes Périmètre 143,33 Zone 517,66"
+                , resumen);
         }
     }
 }
