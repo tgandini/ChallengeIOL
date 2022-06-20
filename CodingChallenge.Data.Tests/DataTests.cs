@@ -103,6 +103,14 @@ namespace CodingChallenge.Data.Tests
         }
 
         [TestCase]
+        public void TestPerimetroAreaRectangulo()
+        {
+            var rectangulo = new Rectangulo(10,5);
+            Assert.AreEqual(50, rectangulo.CalcularArea());
+            Assert.AreEqual(30, rectangulo.CalcularPerimetro());
+        }
+
+        [TestCase]
         public void TestPerimetroAreaTrapecio()
         {
             var trapecio = new Trapecio(15, 12, 5, 7, 10);
@@ -117,10 +125,11 @@ namespace CodingChallenge.Data.Tests
             {
                 new Trapecio(8,7.5M,5,12,7),
                 new Circulo (20),
-                new Cuadrado(12)
+                new Cuadrado(12),
+                new Rectangulo (7, 10)
             };
             var resumen = FormaGeometrica.Imprimir(formas, FormaGeometrica.Portugues);
-            Assert.AreEqual("<h1>Relatório de Formas</ h1>1 Círculo | Área 314,16 | Perímetro 62,83 <br/>1 Quadrado | Área 144 | Perímetro 48 <br/>1 Trapézio | Área 59,5 | Perímetro 32,5 <br/>TOTAL:<br/>3 formas Perímetro 143,33 Área 517,66"
+            Assert.AreEqual("<h1>Relatório de Formas</ h1>1 Círculo | Área 314,16 | Perímetro 62,83 <br/>1 Quadrado | Área 144 | Perímetro 48 <br/>1 Retângulo | Área 70 | Perímetro 34 <br/>1 Trapézio | Área 59,5 | Perímetro 32,5 <br/>TOTAL:<br/>4 formas Perímetro 177,33 Área 587,66"
                 , resumen);
         }
 
